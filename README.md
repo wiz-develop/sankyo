@@ -13,6 +13,8 @@ WordPress 環境の構成管理用リポジトリです。
 初回の `main` コミットは、切替直前の本番ファイルと DB を保存したものです。
 本番にはルート WordPress と `/wordpress` の旧 WordPress が存在するため、DB は2系統を保存しています。
 
+`production-current-20260907.sql.gz.enc` は切替完了後の本番DB（新旧テーブルを含む）です。
+
 DB バックアップは AES-256-CBC / PBKDF2（200,000 iterations）で暗号化しています。復号鍵はリポジトリ外で保管します。
 
 ```sh
