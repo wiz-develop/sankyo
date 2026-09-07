@@ -24,8 +24,9 @@ openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 \
 
 uploads の復元時は分割ファイルを結合してください。
 
+通常運用では `wp-content/uploads/` はGit管理対象外です。切替前の本番 uploads は `backup/uploads/` に分割アーカイブとして保存しています。
+
 ```sh
 cat backup/uploads/production-uploads-20260907.tar.gz.part-* > production-uploads-20260907.tar.gz
 tar -xzf production-uploads-20260907.tar.gz
 ```
-

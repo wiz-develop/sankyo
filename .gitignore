@@ -1,7 +1,7 @@
 .DS_Store
 **/wp-config.php
 **/debug.log
+**/uploads/
 **/cache/
 **/ai1wm-backups/
 **/updraft/
-
