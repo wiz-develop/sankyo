@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+/*
+---------------------------------------------------------
+	reset.css ver 1.4 with jQuery [2009/04/24]
+	*This document validates as CSS level 2.1
+	*GNU General Public License v3
+	*http://higash.net/labo/
+
+	Modify YUI Reset CSS, YUI Fonts CSS	
+	*Copyright (c) 2008, Yahoo! Inc. All rights reserved.
+	*http://developer.yahoo.com/yui/license.html
+---------------------------------------------------------
+*/
+
+/* --HTML-- */
+html {
+background:#fff;
+color:#333;
+}
+
+/* --BODY-- */
+body {
+font:75%/1.5 'Lucida Grande', Arial, Helvetica;
+margin:0;
+overflow:visible;
+padding:0;
+}
+
+	/* for Windows */
+	.win body {
+	font-family:'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック';
+	}
+	
+	/* for Win IE6 */
+	* html.win body {
+	font-family:'ＭＳ Ｐゴシック';
+	}
+
+	/* for Mac firefox2 */
+	.mac body.firefox2 {
+	font-size:12px;
+	}
+
+/* --OTHER TAGS-- */
+a {
+overflow:hidden;
+}
+
+a img, img { 
+border:0;
+}
+
+abbr, acronym {
+border:0;
+}
+
+address, caption, cite, code, dfn, em, th, strong, var {
+font-style:normal;
+font-weight:normal;
+}
+
+blockquote, dd, div, dl, dt, h1, h2, h3, h4, h5, h6, li, ol, p, pre, span, td, th, ul {
+margin:0;
+padding:0;
+}
+
+caption, th {
+text-align:left;
+}
+
+code, kbd, pre, samp, tt {
+font-family:monospace;
+line-height:100%;
+}
+
+	/* for IE7 */
+	*+html code, *+html kbd, *+html pre, *+html samp, *+html tt {
+	font-size:108%; 
+	}
+
+h1, h2, h3, h4, h5, h6 {
+font-size:100%;
+font-weight:normal;
+}
+
+ol, ul {
+list-style:none;
+}
+
+q:before, q:after {
+content:'';
+}
+
+/* form */
+button, fieldset, form, input, label, legend, select, textarea {
+font-family:inherit;
+font-size:100%;
+font-style:inherit;
+font-weight:inherit;
+margin:0;
+padding:0;
+vertical-align:baseline;
+}
+
+	/* for IE6 */
+	* html input, * html textarea {
+	font-family:'ＭＳ Ｐゴシック';
+	}
+
+	/* for IE7 */
+	*+html input, *+html textarea {
+	font-family:'メイリオ', 'ＭＳ Ｐゴシック';
+	}
+	
+	/* for IE8 */
+	.msie8 select {
+	font-family:sans-serif;
+	}
+	
+	/* for Chrome1 */
+	.chrome1 select {
+	font-family:'Lucida Grande', Arial, Helvetica;
+	}
+
+/* tables still need 'cellspacing="0"' */
+table {
+border-collapse:collapse;
+border-spacing:0;
+font-size:100%;
+}

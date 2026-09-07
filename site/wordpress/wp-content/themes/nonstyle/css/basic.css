@@ -1,0 +1,229 @@
+@charset "utf-8";
+
+/*
+---------------------------------------------------------------------
+	basic.css ver 1.2 with jQuery [2009/04/24] 
+	*This document validates as CSS level 2.1
+	*GNU General Public License v3
+	*http://higash.net/laboratory/
+
+	Modify YUI Base CSS
+	*Copyright (c) 2008, Yahoo! Inc. All rights reserved.
+	*http://developer.yahoo.com/yui/license.html
+---------------------------------------------------------------------
+*/
+
+/* --A-- */
+a {
+ text-decoration: underline;
+ color: #3399cc;
+}
+
+a:hover {
+ text-decoration: none;
+}
+
+/* --FORM-- */
+fieldset {
+border:1px solid #ccc;
+margin-bottom:1em;
+padding:0 1em 1em 1em;
+}
+
+input {
+padding:0.1em;
+vertical-align:middle;
+}
+
+input[type="text"] {
+height:1.2em;
+line-height:1.2;
+}
+
+	/* for IE6 */
+	* html input.text {
+	height:1.2em;
+	line-height:1.2;
+	}
+	
+	/* for Firefox2+ */
+	.firefox2 input[type="text"],
+	.firefox3 input[type="text"] {
+	padding-top:0;
+	}
+
+	/* for Chrome1 */
+	.chrome1 input[type="text"] {
+	vertical-align:baseline;
+	}	
+
+	/* for Safari3 */
+	.safari3 input[type="text"] {
+	vertical-align:baseline;
+	}
+
+input[type="checkbox"],
+input[type="radio"] {
+padding:0;
+vertical-align:baseline;
+}
+
+	/* for IE6 */
+	* html input.checkbox,
+	* html input.radio {
+	vertical-align:-0.3em;
+	}
+	
+	/* for IE7 */
+	*+html input[type="checkbox"],
+	*+html input[type="radio"] {
+	vertical-align:0;
+	}	
+
+	/* for IE8 */
+	.msie8 input[type="checkbox"],
+	.msie8 input[type="radio"] {
+	vertical-align:-0.2em;
+	}
+	
+	/* for Firefox2+ */
+	.firefox2 input[type="checkbox"],
+	.firefox2 input[type="radio"],
+	.firefox3 input[type="checkbox"],
+	.firefox3 input[type="radio"] {
+	vertical-align:-0.2em;
+	}
+
+	/* for Opera9 */
+	.opera9 input[type="checkbox"],
+	.opera9 input[type="radio"] {
+	vertical-align:middle;
+	}
+	
+	/* for Chrome1 */
+	.chrome1 input[type="checkbox"],
+	.chrome1 input[type="radio"] {
+	vertical-align:-0.2em;
+	}
+
+input[type="submit"] {
+line-height:1;
+padding:0.3em;
+}
+
+	/* for IE6 */
+	* html input.submit {
+	padding:0.3em 0.1em 0.1em;
+	}
+	
+	/* for IE7 */
+	*+html input[type="submit"] {
+	padding:0.3em 0.1em 0.2em;
+	}
+	
+	/* for IE8 */
+	.msie8 input[type="submit"] {
+	padding:0.4em 0.3em 0.2em;
+	}
+
+	/* for Firefox2+ */
+	.firefox2 input[type="submit"],
+	.firefox3 input[type="submit"] {
+	padding:0.1em;
+	}
+	
+	/* for Mac Opera9 */
+	.mac .opera9 input[type="submit"] {
+	padding:0 0.3em;
+	}
+	
+legend {
+background:#fff;
+padding:0.3em;
+}
+
+select {
+padding:0;
+vertical-align:baseline;
+}
+
+	/* for IE6 */
+	* html select {
+	vertical-align:middle;
+	}
+	
+	/* for IE7 */
+	*+html select {
+	vertical-align:-0.2em;
+	}
+
+textarea {
+line-height:1.4;
+padding:0.1em;
+vertical-align:middle;
+}
+
+/* --LIST-- */
+ol, ul {
+text-align:left;
+}
+
+ol li {
+list-style:decimal outside;	
+}
+
+/* --OTHER TAGS-- */
+abbr, acronym {
+border-bottom:1px dotted;
+cursor:help;
+}
+
+blockquote {
+margin:1em;
+}
+
+caption {
+margin-bottom:0.5em;
+text-align:center;
+}
+
+em, strong {
+font-weight:bold;
+}
+	
+p {
+text-align:left;
+width:auto;
+}
+
+/* clearfix */
+.clearfix:after {
+content:"";
+display:block;
+clear:both;
+}
+
+	/* for IE6 */
+	* html .clearfix {
+	display:inline-block;
+	}
+	
+	/* for IE7 */
+	*+html .clearfix {
+	display:inline-block;
+	}
+
+div:after {
+ content: ".";
+ display: block;
+ height: 0.1px;
+ font-size: 0.1em;
+ line-height: 0;
+ clear: both;
+ visibility: hidden;
+}
+
+.clear {
+ clear: both;
+}
+

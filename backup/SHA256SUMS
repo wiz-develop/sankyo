@@ -1,0 +1,4 @@
+52c4c506f5a66eb3fcbf96edcb3434da0679934a430d86c2031035d352516c56  backup/databases/production-legacy-wordpress-20260907.sql.gz.enc
+4ca350cee663f590e097ee772e25d60d4c6fbd23ba252ef066110370172f862d  backup/databases/production-root-20260907.sql.gz.enc
+4c4796e97eb7001b71d87daf08ed72d4a7c4512675e97af3326480030af80fa1  backup/uploads/production-uploads-20260907.tar.gz.part-aa
+c4de2738bc90d460ec73f0ecbb4e5b76fdf9590edc8d80ba6ab05f7aecec55d4  backup/uploads/production-uploads-20260907.tar.gz.part-ab

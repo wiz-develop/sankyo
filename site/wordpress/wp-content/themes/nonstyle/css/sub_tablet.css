@@ -1,0 +1,84 @@
+/* screens smaller than 1200---------------------------------------------------------- */
+@media only screen and (min-width:641px) and (max-width:1199px) {
+
+#page_title02 h2 {
+	margin-left: 9%;
+}
+
+#contents02 {
+	width: 95%;
+	max-width: 906px;
+}
+#works_main {
+	width: 100%;
+	float: none;
+	padding: 0;
+	margin-bottom: 60px;
+}
+#contents02 #side {
+	width: 100%;
+	float: none;
+}
+.works_list_wrap {
+	padding: 20px 2.5% 0;
+}
+
+/*------------------------ パーツ ------------------------*/
+.works_unit02 dd {
+	font-size: 14px;
+}
+
+
+
+
+
+/*------------------------------------------------------------------------------*/
+}
+/*------------------------------------------------------------------------------*/
+
+
+/* screens smaller than 1120---------------------------------------------------------- */
+@media only screen and (min-width:641px) and (max-width:1119px) {
+
+
+
+
+
+
+/*------------------------------------------------------------------------------*/
+}
+/*------------------------------------------------------------------------------*/
+
+
+
+/* screens smaller than 780---------------------------------------------------------- */
+@media only screen and (min-width:641px) and (max-width:779px) {
+
+/*------------------------ contact ------------------------*/
+p#t-right {
+	margin-left:0;
+}
+.inquiry th {
+	text-align:left;
+	width:100%;
+	display: block;
+}
+.inquiry td {
+	width:100%;
+	display: block;
+}
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 input[type="tel"],
+.wpcf7 select  {
+	width:100%;
+}
+.wpcf7 textarea  {
+	width:100%;
+}
+
+
+
+/*------------------------------------------------------------------------------*/
+}
+/*------------------------------------------------------------------------------*/
