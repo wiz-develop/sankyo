@@ -55,3 +55,8 @@ RewriteRule . /index.php [L]
 SetEnv noabort 1
 </IfModule>
 # END LiteSpeed
+
+# WADAX SiteGuard module (preserved from the pre-launch production config)
+<IfModule mod_siteguard.c>
+   SiteGuard_User_Enabled on
+</IfModule>
