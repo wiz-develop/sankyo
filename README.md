@@ -21,6 +21,15 @@ WordPress 環境の構成管理用リポジトリです。
 - Contact Form 7 のreCAPTCHAを旧本番環境の本番ドメイン用設定へ移行
 - reCAPTCHAの秘密鍵などの認証情報はGit管理対象外
 
+## 2026-09-28 旧サイトへの巻き戻り対策
+
+旧ルートWordPressのコア更新によって `/index.php` が標準状態へ戻り、旧サイトが表示される事象が発生しました。
+
+- ルートの `index.php` を `/cms/wp-blog-header.php` 読み込みへ復旧
+- `.htaccess` で公開リクエストを `/cms/index.php` へ直接ルーティング
+- 旧ルートWordPressへの直接アクセスを遮断
+- 旧ルートWordPressの `wp-config.php` をサーバー上の非公開バックアップ領域へ移動し、自動更新対象から除外
+
 DB バックアップは AES-256-CBC / PBKDF2（200,000 iterations）で暗号化しています。復号鍵はリポジトリ外で保管します。
 
 ```sh

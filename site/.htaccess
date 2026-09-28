@@ -32,6 +32,25 @@ CacheKeyModify -qs:_ga
 ## LITESPEED WP CACHE PLUGIN - Do not edit the contents of this block! ##
 # END NON_LSCACHE
 
+# BEGIN Sankyo production routing
+# Keep the public site on /cms even if the retired root WordPress installation
+# rewrites /index.php during a core update.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# Block direct access to the retired WordPress installation in the document root.
+RewriteRule ^(?:wp-admin|wp-includes|wp-content)(?:/|$) - [F,L]
+RewriteRule ^(?:wp-activate|wp-blog-header|wp-comments-post|wp-config(?:\.[^/]+)?|wp-cron|wp-links-opml|wp-load|wp-login|wp-mail|wp-settings|wp-signup|wp-trackback|xmlrpc)\.php$ - [F,L]
+
+# Route the homepage and all virtual paths to the production WordPress in /cms.
+RewriteRule ^(?:index\.php)?$ /cms/index.php [L]
+RewriteCond %{REQUEST_URI} !^/cms/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /cms/index.php [L]
+</IfModule>
+# END Sankyo production routing
+
 # BEGIN WordPress
 # "BEGIN WordPress" から "END WordPress" までのディレクティブ (行) は
 # 動的に生成され、WordPress フィルターによってのみ修正が可能です。
